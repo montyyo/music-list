@@ -82,4 +82,21 @@ public class MusicOrganizer
     {
         player.stop();
     }
+    
+    /**
+     * nuevo metodo checkIndex toma un parámetro entero y
+     *comprueba que sea un índice válido para el atributo files
+     */
+    public void checkIndex(int indice)
+    {
+       if(indice >= 0 && indice < files.size())
+       {
+       }
+       else
+       {
+         
+         System.out.println("numero no valido, el rango de la lista es :" + files.size()+ " ]contando el 1 como 0 ");
+       }
+    
+    }
 }
